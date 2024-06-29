@@ -11,11 +11,28 @@
 console.log("ciao")
 
 //chiedere numero di km da percorrere
+const kmViaggio = prompt("Inserisci i km da percorrere ")
+
 //chiedere età del passeggero
-//prezzo totale viaggio
-    //prezzo al km 0.21€
-    //SE minorenne
-    //sconto 20%
-    //ALTRIMENTI SE over 65 
-    //sconto 40%
+const anniPasseggero = prompt("Inserisci la tua età ")
+
+//prezzo totale viaggio prezzo al km 0.21€
+let prezzoViaggio = kmViaggio * 0.21
+//prezzi scontati
+let scontato20 = prezzoViaggio * 0.8
+let scontato40 = prezzoViaggio * 0.6
+
+//SE minorenne 
+// sconto 20%
+if (anniPasseggero < 18) {
+    console.log(' il prezzo del biglietto è € ' + scontato20.toFixed(2))
+}
+//ALTRIMENTI SE over 65
+//sconto 40%
+else if (anniPasseggero > 65) {
+    console.log(' il prezzo del biglietto è € ' + scontato40.toFixed(2))
+}
+
+else
+    console.log(' il prezzo del biglietto è € ' + prezzoViaggio.toFixed(2))
 //stampa prezzo finale con due decimali
