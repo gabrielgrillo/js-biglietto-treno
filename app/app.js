@@ -22,17 +22,29 @@ let prezzoViaggio = kmViaggio * 0.21
 let scontato20 = prezzoViaggio * 0.8
 let scontato40 = prezzoViaggio * 0.6
 
+//assegniamo a prezzo il titolo dell'html
+let prezzo = document.getElementById("prezzo")
+
 //SE minorenne 
 // sconto 20%
 if (anniPasseggero < 18) {
     console.log(' il prezzo del biglietto è € ' + scontato20.toFixed(2))
+    prezzo.innerHTML = ' il prezzo del biglietto è € ' + scontato20.toFixed(2)
 }
 //ALTRIMENTI SE over 65
 //sconto 40%
 else if (anniPasseggero > 65) {
     console.log(' il prezzo del biglietto è € ' + scontato40.toFixed(2))
+    prezzo.innerHTML = ' il prezzo del biglietto è € ' + scontato40.toFixed(2)
+
+}
+//prezzo tra 18 e 65 compresi
+else {
+    console.log(' il prezzo del biglietto è € ' + prezzoViaggio.toFixed(2))
+    prezzo.innerHTML = ' il prezzo del biglietto è € ' + prezzoViaggio.toFixed(2)
+
 }
 
-else
-    console.log(' il prezzo del biglietto è € ' + prezzoViaggio.toFixed(2))
-//stampa prezzo finale con due decimali
+
+
+
