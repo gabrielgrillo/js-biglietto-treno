@@ -36,8 +36,18 @@ if (anniPasseggero < 18) {
 else if (anniPasseggero > 65) {
     console.log(' il prezzo del biglietto è € ' + scontato40.toFixed(2))
     prezzo.innerHTML = ' il prezzo del biglietto è € ' + scontato40.toFixed(2)
-
 }
+
+// else if (isNaN(prezzoViaggio)) {
+//     prezzo.innerHTML = ' I dati inseriti non sono validi'
+//     console.log("nonono ")
+// }
+
+// else if (isNaN(anniPasseggero)) {
+//     prezzo.innerHTML = ' I dati inseriti non sono validi'
+//     console.log("nonono ")
+// }
+
 //prezzo tra 18 e 65 compresi
 else {
     console.log(' il prezzo del biglietto è € ' + prezzoViaggio.toFixed(2))
