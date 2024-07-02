@@ -11,10 +11,10 @@
 console.log("ciao")
 
 //chiedere numero di km da percorrere
-const kmViaggio = prompt("Inserisci i km da percorrere ")
+const kmViaggio = parseFloat(prompt("Inserisci i km da percorrere "))
 
 //chiedere età del passeggero
-const anniPasseggero = prompt("Inserisci la tua età ")
+const anniPasseggero = parseInt(prompt("Inserisci la tua età "))
 
 //prezzo totale viaggio prezzo al km 0.21€
 let prezzoViaggio = kmViaggio * 0.21
